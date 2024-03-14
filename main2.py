@@ -6,8 +6,9 @@ from pytube import YouTube
 def beginDownload():
     try:
         ytLink = link.get()
-        ytObject = YouTube(app)
-        vid = ytObject.streams.all
+        ytObject = YouTube(ytLink)
+        vid = ytObject.streams.get_audio_only
+        vid.download()
         print(vid)
     except:
         print('Error')
