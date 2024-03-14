@@ -8,7 +8,7 @@ def beginDownload():
         ytLink = link.get()
         ytObject = YouTube(ytLink)
         vid = ytObject.streams.get_audio_only()
-        vidtitle = ytObject.streams.title
+        vidtitle = ytObject.title
         title.configure(text=vidtitle)
         vid.download()
         print(vid)
