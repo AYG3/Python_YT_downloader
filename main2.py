@@ -24,7 +24,7 @@ app.geometry('720x480')
 app.title("YT Downloader - AYG3")
 
 #Title
-title = customtkinter.CTkLabel(app, text='')
+title = customtkinter.CTkLabel(app, text='Youtube Video')
 title.pack()
 
 #Link
