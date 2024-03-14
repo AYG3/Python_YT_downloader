@@ -9,7 +9,7 @@ def beginDownload():
         ytObject = YouTube(ytLink)
         vid = ytObject.streams.get_audio_only()
         vidtitle = ytObject.title
-        title.configure(text=vidtitle)
+        title.configure(text=vidtitle + ' - downloaded')
         vid.download()
         print(vid)
     except:
