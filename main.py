@@ -50,7 +50,7 @@ title.pack(padx=10, pady=10 )
 
 #link input
 url_var = tkinter.StringVar()
-link = customtkinter.CTkEntry(app, width=350, height=40, textvariable=url_var)
+link = customtkinter.CTkEntry(app, placeholder_text='Enter Youtube Link here', width=350, height=40, textvariable=url_var)
 link.pack()
 
 #Finished Dowloading
