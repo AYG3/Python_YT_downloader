@@ -7,7 +7,7 @@ def beginDownload():
     try:
         ytLink = link.get()
         ytObject = YouTube(ytLink)
-        vid = ytObject.streams.get_audio_only
+        vid = ytObject.streams.get_audio_only()
         vid.download()
         print(vid)
     except:
